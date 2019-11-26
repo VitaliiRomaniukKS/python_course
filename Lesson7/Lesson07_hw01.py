@@ -1,0 +1,11 @@
+
+my_string = str('harry potter; 30; 127.45 galeon; auror')
+name = dict(zip(['first_name', 'last_name'], ['', '']))
+name_str, age, salary_str, profession  = my_string.split(';')
+name['first_name'], name['last_name'] = name_str.title().split()
+age = int(age)
+amount, currency = salary_str.split()
+amount = float(amount)
+salary = dict(amount=amount, currency=currency)
+person = dict (name=name, age=age, salary=salary, profession=profession)
+print(person)
