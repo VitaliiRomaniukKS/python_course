@@ -9,7 +9,6 @@ lst = dir(__builtins__)[80:]
 lst.remove('copyright')
 lst.remove('credits') 
 funcs = [getattr(__builtins__, attr) for attr in lst]
-# print(funcs)
 
 my_str = ''
 while (my_str != 'stop') and  funcs:
